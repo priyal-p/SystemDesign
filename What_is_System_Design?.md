@@ -24,4 +24,42 @@ How to evaluate any System Design?
  
   Issues with Shopify - 
 - Issue with Delivery Tracking: Unable to track the ordered products. Expensive customer support. Need to check through Shopify Portal.
-- Payment Gateway doesn't support international payments - 
+- Payment Gateway doesn't support international payments.
+
+  Solution 1 -
+Create a Technical Wrapper over Shopify - Wrapper over existing solution, extracting functionality, more control, lesser bugs in new implementation.
+Payment Page - Make a custom page to accept payments using payment gateway like PayPal, Stripe, Razorpay.
+Order Tracking Page - Make a custom page to allow users to track their orders through order-id or tracking-id, users can view delivery status.
+
+To support Payment Page we need to store information about success/failure of payemnts.
+To support Order Tracking Page we need to know the current deluvery state.
+
+This information is saved on the server, page with fetch data from server and display it to the user.
+
+Pagement Page <----API----> Payment Server           
+Order Tracking Page <----API----> Delivery Server
+
+API - Application Programming Interface
+An API for a server is a function, It takes some parameters as inputs and gives an output.
+API can be written in any language of preference - Go, Java, Python etc.
+Defines a contract betweeen Server and Application(Web Page or Mobile App) on how to send request and format of receiving response.
+
+API Contract - Defines what kind of information needs to be send to the server to receive the response in desired format.
+
+
+eg. Request for Payment Status
+```
+{
+    "order_id": "ABC1234"
+}
+```
+
+eg. Response for Payment Status
+```
+{
+    "order_status": "success"
+}
+```
+
+App -> sends request -> server running on some PORT receives request message -> serializes -> executes API function -> returns response.
+
