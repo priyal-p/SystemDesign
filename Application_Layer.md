@@ -1,4 +1,4 @@
-What is the Application Layer?
+<b>What is the Application Layer?</b>
 
 In a classic 3-tier architecture:
 
@@ -10,12 +10,12 @@ Data Layer – Database, storage, and data access
 
 On application layer:
 
-- Implement business rules
+<ul> Implement business rules </ul>
 
-- Handle HTTP requests and responses
+<ul> Handle HTTP requests and responses </ul>
 
-- Coordinate between frontend and backend
+<ul> Coordinate between frontend and backend </ul>
 
-- Manage sessions, authentication, and permissions
+<ul> Manage sessions, authentication, and permissions </ul>
 
-- Perform input validation and data processing
+<ul> Perform input validation and data processing </ul>
