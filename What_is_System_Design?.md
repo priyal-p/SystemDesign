@@ -49,13 +49,13 @@ Order Tracking Page <----API----> Delivery Server
 
 <b>API - Application Programming Interface</b>
 
-An API for a server is a function, It takes some parameters as inputs and gives an output.
+<i>An API for a server is a function, It takes some parameters as inputs and gives an output.</i>
 
-API can be written in any language of preference - Go, Java, Python etc.
+<i>API can be written in any language of preference - C++, Go, Java, Python etc.</i>
 
 Defines a contract betweeen Server and Application(Web Page or Mobile App) on how to send request and format of receiving response.
 
-API Contract - Defines what kind of information needs to be send to the server to receive the response in desired format.
+<i>API Contract - Defines what kind of information needs to be send to the server to receive the response in desired format.</i>
 
 
 eg. Request for Payment Status
