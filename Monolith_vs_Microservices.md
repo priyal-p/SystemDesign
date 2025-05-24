@@ -5,5 +5,8 @@ Monolith vs Microservices
 
 For General operations - Node.js is 2-4 times slower than other optimized languages.
 We would have to pay CSP more money for servers for more compute.
-If resources with Node.js knowledge is cheaper and easier to train than that cost can be offset.
+If resources with Node.js knowledge is cheaper and easier to train than that cost can be offset. It mmight be better for the business.
 
+- Think about tradeoffs
+- Talk with numbers
+- Do a cost-benefit analysis with the founder or product manager.
