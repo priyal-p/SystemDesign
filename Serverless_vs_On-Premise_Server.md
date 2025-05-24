@@ -60,3 +60,12 @@ Problem if we just keep purcahsing larger instances -
 <img width="873" alt="Screenshot 2025-05-24 at 9 35 17 PM" src="https://github.com/user-attachments/assets/e9e0fa49-1a63-41e2-85ce-5d3a2359e42a" />
 
 <img width="646" alt="Screenshot 2025-05-24 at 9 37 41 PM" src="https://github.com/user-attachments/assets/a7fb4b87-ffa0-4250-8507-a9f424a729fc" />
+
+AWS ELB has its own algorithms and we can also provide our own algorithm based on which the ELB will route the request to server.
+
+Load Balancing Algorithms - (State here means memory)
+1. Stateless
+2. Stateful
+
+   Stateful
+   If I have a mapping of every request ID to a corresponding server then it is a Stateful Algorithm.
