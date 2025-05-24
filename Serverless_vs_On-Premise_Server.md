@@ -59,4 +59,4 @@ Problem if we just keep purcahsing larger instances -
 
 <img width="873" alt="Screenshot 2025-05-24 at 9 35 17 PM" src="https://github.com/user-attachments/assets/e9e0fa49-1a63-41e2-85ce-5d3a2359e42a" />
 
-
+<img width="646" alt="Screenshot 2025-05-24 at 9 37 41 PM" src="https://github.com/user-attachments/assets/a7fb4b87-ffa0-4250-8507-a9f424a729fc" />
