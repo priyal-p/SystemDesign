@@ -67,5 +67,44 @@ Load Balancing Algorithms - (State here means memory)
 1. Stateless
 2. Stateful
 
-   Stateful
-   If I have a mapping of every request ID to a corresponding server then it is a Stateful Algorithm.
+Stateful
+
+If I have a mapping of every request ID to a corresponding server like in a DNS then it is a Stateful Algorithm as we need memory we need to manage state.
+Routing logic is stored in memory.
+In stateful systems, servers maintain information about the user's session or other relevant data between requests. 
+eg. 
+- Least Connections algorithm: Requests are directed to server handling least number of requests.
+- Consistent Hashing: Consistent Hashing ensures that all requests from a specific client are routed to the same server, allowing the server to maintain and access the stateful data. 
+
+Benefits in Stateful Systems:
+1. Session Persistence: Ensures that a client's session data is always available on the same server. 
+2. Data Locality: Keeps related data on the same server, reducing latency.
+
+Stateless 
+
+If I manage the routing with just a fuction, then it would be Stateless.
+No mapping maintained, No routing based on range of requests redirected to certain server.
+Routing logic is within a function. eg. Round Robin algorithm.
+In stateless systems, servers typically don't maintain any information about the user's session between requests. Each request is treated independently.
+
+When browsers are trying to resolve the IP Address through DNS, DNS has multiple entries of the same domain mapping to different IP Addresses possibly for different regions. This is so that if DNS cannot connect to one region then another region can be checked.
+DNS also has load balancing through which it tries to connect to near by region first. This is called Geo-based Load Balancing.
+First low latency, close region server is tried, if it fails, then even though high latency, different server is tried.
+
+Horizontal Scaling -
+Adding more servers to serve more requests is called horizontal scaling. As app gets more users it becomes difficult to handle large volumes of requests through single server.
+
+Vertical Scaling - 
+Upgrading to bigger servers to handle more requests is called vertical scaling. Upgrading the server gives more compute, more bandwidth, more power into a single computer.
+
+Normally Hybrid approach can be adopted where 
+   
+<img width="851" alt="Screenshot 2025-05-26 at 9 52 46 PM" src="https://github.com/user-attachments/assets/dd00e36f-5110-4dce-a270-0d523c73f4c0" />
+
+<img width="826" alt="Screenshot 2025-05-26 at 9 56 30 PM" src="https://github.com/user-attachments/assets/a0948a50-e946-4197-90ec-6a784c9ac2a1" />
+
+<img width="787" alt="Screenshot 2025-05-26 at 9 57 36 PM" src="https://github.com/user-attachments/assets/3ed5de68-389c-42c1-8146-501501d55b9f" />
+With one large server, we can use Weighed Round Robin to send relatively more requests to large server than smaller server.
+
+
+
